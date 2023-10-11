@@ -10,4 +10,9 @@ declare module '@nativescript/capacitor' {
 export interface nativeCustom {
   dreamBig: () => NativeProperty<string>;
   openNativeModalView: () => void;
+  iosAddNotificationObserver: (notificationName: string, onReceiveCallback: (notification: NSNotification) => void) => any;
+  iosRemoveNotificationObserver: (observer: any, notificationName: string) => void;
+
+  toggleBatteryLevelListener: (callback?: (level: number) => void) => void;
+  batteryLevel: () => NativeProperty<string>;
 }

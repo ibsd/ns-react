@@ -31,3 +31,5 @@ import './examples/simple';
 
 // Example C: opening a native modal
 import './examples/modal';
+import './examples/bat';
+import './examples/ios';
